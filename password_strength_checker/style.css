@@ -63,9 +63,23 @@
 #message{
     position: absolute;
     margin-top: 5px;
-    background: #333;
-    color: #fff;
+    color: black;
     display: none;
     font-size: 14px;
+}
+
+#strength.weak {
+    font-weight: bold;   
+    color: #ff4d4d;  /* Red */
+}
+
+#strength.moderate {
+    font-weight: bold;
+    color: #ffa500;  /* Orange */
+}
+
+#strength.strong {
+    font-weight: bold;
+    color: #2ecc71;  /* Green */
 }
 
