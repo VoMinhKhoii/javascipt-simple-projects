@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(90deg, beige, salmon);
+}
+
+#main{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#addBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    color: azure;
+    background-color: beige;
+    border: none;
+    outline: none;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.fas.fa-plus{
+    font-size: 20px;
+    color: black;
+}
+
+#addBtn:hover{
+    background-color: #e6e6d1;
+}
+
+#addBtn:active {
+    transform: translateY(1px);  /* Push down effect when clicked */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);  /* Smaller shadow when clicked */
+}
+
+.note{
+    max-width: 300px;
+    margin: 20px;
+    background: #393e46;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.note:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tool{
+    width: 100%;
+    background-color: #222831;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tool i{
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tool i:hover{
+    color: #00adb5;
+}
+
+.tool i:active{
+    transform: translateY(0.5px);
+}
+
+.note textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+}
