@@ -15,3 +15,7 @@ function calculate(){
         display.value = 'Error';
     }
 }
+
+function percentage(){
+    display.value = eval(display.value) / 100;
+}

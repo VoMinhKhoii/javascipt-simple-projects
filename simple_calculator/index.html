@@ -12,23 +12,34 @@
     <div id="calculator">
         <input id="display" readonly>
         <div id="keys">
-            <button onClick="appendToDisplay('+')" class = "operator-btn"> <i class="fas fa-plus"></i> </button>
-            <button onClick="appendToDisplay('7')"> 7 </button>
-            <button onClick="appendToDisplay('8')"> 8 </button>
-            <button onClick="appendToDisplay('9')"> 9 </button>
-            <button onClick="appendToDisplay('-')" class = "operator-btn"> <i class="fas fa-minus"></i> </button>
-            <button onClick="appendToDisplay('4')"> 4 </button>
-            <button onClick="appendToDisplay('5')"> 5 </button>
-            <button onClick="appendToDisplay('6')"> 6 </button>
-            <button onClick="appendToDisplay('*')" class = "operator-btn"> <i class="fas fa-multiply"></i> </button>
-            <button onClick="appendToDisplay('1')"> 1 </button>
-            <button onClick="appendToDisplay('2')"> 2 </button>
-            <button onClick="appendToDisplay('3')"> 3 </button>
-            <button onClick="appendToDisplay('/')" class = "operator-btn"> <i class="fas fa-divide"></i> </button>
-            <button onClick="appendToDisplay('0')"> 0 </button>
-            <button onClick="appendToDisplay('.')"> . </button>
-            <button onClick="calculate()"> = </button>
-            <button onClick="clearDisplay()" class = "operator-btn"> C </button>
+            <!-- First row -->
+            <button onClick="clearDisplay()">AC</button>
+            <button onClick="plusMinus()">±</button>
+            <button onClick="percentage()">%</button>
+            <button onClick="appendToDisplay('/')" class="operator-btn"><i class="fas fa-divide"></i></button>
+            
+            <!-- Second row -->
+            <button onClick="appendToDisplay('7')" class="number">7</button>
+            <button onClick="appendToDisplay('8')" class="number">8</button>
+            <button onClick="appendToDisplay('9')" class="number">9</button>
+            <button onClick="appendToDisplay('*')" class="operator-btn"><i class="fas fa-multiply"></i></button>
+            
+            <!-- Third row -->
+            <button onClick="appendToDisplay('4')" class="number">4</button>
+            <button onClick="appendToDisplay('5')" class="number">5</button>
+            <button onClick="appendToDisplay('6')" class="number">6</button>
+            <button onClick="appendToDisplay('-')" class="operator-btn"><i class="fas fa-minus"></i></button>
+            
+            <!-- Fourth row -->
+            <button onClick="appendToDisplay('1')" class="number">1</button>
+            <button onClick="appendToDisplay('2')" class="number">2</button>
+            <button onClick="appendToDisplay('3')" class="number">3</button>
+            <button onClick="appendToDisplay('+')" class="operator-btn"><i class="fas fa-plus"></i></button>
+            
+            <!-- Fifth row -->
+            <button onClick="appendToDisplay('0')" class="number zero">0</button>
+            <button onClick="appendToDisplay('.')" class="number">.</button>
+            <button onClick="calculate()" class="operator-btn">=</button>
         </div>
     </div>
     
